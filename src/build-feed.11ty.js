@@ -11,22 +11,27 @@ module.exports = class {
     const { ActivityFeed } = await import("@11ty/eleventy-activity-feed");
 
     let feed = new ActivityFeed();
+    feed.setCacheDuration("1h");
 
-    feed.setCacheDuration("1h"); // cache is persisted now, so we’ll update this at maximum once per hour
 
+    // ALL the feeds
+    // TODO: this should be done a bit smoother a loop over a bunch of resources or ?
 
-    // The Eleventy Activity Feed
-    // feed.addSource("youtubeUser", "YouTube", "UCskGTioqrMBcw8pd14_334A"); // Eleventy
-    feed.addSource("atom", "Blog", "https://www.11ty.dev/blog/feed.xml");
+    // rss feed
+
+    // atom
     feed.addSource("atom", "Blog", "https://11ty.rocks/feed/");
+
+    // Mastodon
     feed.addSource("rss", "Mastodon", "https://fosstodon.org/users/eleventy.rss");
-    // feed.addSource("twitterUser", "Twitter", "eleven_ty", "949639269433380864");
+    feed.addSource("rss", "Mastodon", "https://fosstodon.org/users/saga11.rss");
+
 
     return feed.toRssFeed({
       title: "Eleventy Hub",
       language: "en",
       url: "https://www.11tyhub.dev/feed.rss",
-      subtitle: "A collection of 11ty feeds",
+      subtitle: "A collection of Eleventy feeds",
     });
   }
 };

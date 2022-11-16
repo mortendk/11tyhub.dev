@@ -1,6 +1,54 @@
 body {
-	background-color: #efefef;
-	color: black
+	background-color: whitesmoke;
+	color: black;
+	font-family: sans-serif;
 }
 
-main
+main {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+footer {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: center
+}
+
+h1 {
+	text-align: center
+}
+h2 {
+	margin: 0;
+}
+
+.icon {
+	width: 2rem;
+	color: orange
+}
+
+.feeditem {
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: gray
+}
+
+.feeditem h2 a {
+	text-decoration: none
+}
+
+.feeditem h2 a:hover{
+	text-decoration: underline;
+}
+
+.feeditem__content {
+
+}
+
+.feeditem__meta {
+	margin: 1rem;
+}

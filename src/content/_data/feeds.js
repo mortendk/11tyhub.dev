@@ -1,7 +1,12 @@
 const Parser = require("rss-parser");
 let parser = new Parser();
 
-const feeds = ["https://www.11ty.dev/blog/feed.xml", "https://11ty.rocks/feed/"];
+const feeds = [
+    "https://fosstodon.org/users/eleventy.rss",
+    "https://11ty.rocks/feed/",
+    "https://www.11ty.dev/blog/feed.xml",
+    "https://fosstodon.org/users/saga11.rss"
+  ];
 
 module.exports = async function () {
   let feeditems = [];
@@ -16,7 +21,7 @@ module.exports = async function () {
       title: feed.title,
       url: feed.feedUrl,
       link: feed.link,
-      date: feed.lastBuildDate,
+      date: feed.lastBuildDate
     };
 
     // Lets get all the items

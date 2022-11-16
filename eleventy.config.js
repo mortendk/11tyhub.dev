@@ -13,6 +13,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/service-workers.js");
 	eleventyConfig.addPassthroughCopy("src/assets/");
 
+	// Filters
+	eleventyConfig.addFilter("formatDate",require("./src/_11ty/filter/formatDate.js"));
+	eleventyConfig.addFilter("markdown",require("./src/_11ty/filter/markdown.js"));
+	eleventyConfig.addFilter("slugify", require("./src/_11ty/filter/slugify.js"));
+
 	// Directory setup
 	return {
 		markdownTemplateEngine: "njk",

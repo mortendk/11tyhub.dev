@@ -1,0 +1,40 @@
+---
+title: 11ty Hub
+permalink: /index.html
+eleventyExcludeFromCollections: false
+
+layout: page.njk
+---
+
+
+{% for feed in feeds | sort(true, false, 'pubDate')  %}
+
+<article class="feeditem">
+
+	<h2>
+		{# <div class="icon">
+			{% include "rss.svg" %}
+		</div> #}
+
+		<a href="{{feed.link}}" target="_blank">
+		{% if feed.title %}
+			{{ feed.title | safe }}
+		{% else %}
+			{{ feed.contentSnippet | striptags(true) | truncate(40, true, "...")  | safe }}
+		{% endif %}
+		</a>
+	</h2>
+
+	<div class="feeditem__content">
+		{{ feed.content | striptags(true) | truncate(800, true, "...") | safe }}
+	</div>
+
+	<div class="feeditem__meta">
+		 Date: {{ feed.pubDate  | formatDate("DDD T")  }}
+		 <br>
+		 <a href="{{feed.link}}" target="_blank">{{feed.link}}</a>
+	</div>
+
+</article>
+
+{% endfor %}

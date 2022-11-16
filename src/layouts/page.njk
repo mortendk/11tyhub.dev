@@ -13,17 +13,18 @@
 </head>
 <body>
 
+{% include "header.njk" %}
 <main>
-	<h1>{{ title }}</h1>
-	<div>
+	<h2>{{ title }}</h1>
+
 	{{ content | safe }}
-	</div>
+
 </main>
+
 <footer>
 	made with 😍 & ☕️ by <a href="https://morten.dk">mortendk</a>
 	🐞
 	<a href="https://github.com/mortendk/11tyhub.dev">github</a>
-
 </footer>
 
 {# Service worker #}
