@@ -27,15 +27,20 @@ Please make sure its only 11ty stuff thats in the feed
 	netlify-honeypot="bot-field"
 	action="/thanx/"
 >
+<div>
+	<label>Name</label>
+	<input name="name" id="name"/>
+</div>
 
-<label>Name</label>
-<input name="name" id="name"/>
+<div>
+	<label>RSS Feed</label>
+	<input name="feed" id="feed" required/>
+</div>
 
-<label>RSS Feed</label>
-<input name="feed" id="feed" required/>
-
-<label>Message</label>
-<textarea></textarea>
+<div>
+	<label>Message</label>
+	<textarea></textarea>
+</div>
 
 <button aria-label="Submit">
 	Send
