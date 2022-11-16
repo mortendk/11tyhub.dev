@@ -23,14 +23,15 @@ Please make sure its only 11ty stuff thats in the feed
 
 
 <div>
+	<label>RSS Feed</label>
+	<input name="feed" id="feed" required/>
+</div>
+
+<div>
 	<label>Name</label>
 	<input name="name" id="name"/>
 </div>
 
-<div>
-	<label>RSS Feed</label>
-	<input name="feed" id="feed" required/>
-</div>
 
 <div>
 	<label>Message</label>

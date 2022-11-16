@@ -18,16 +18,16 @@ layout: page.njk
 <form name="contact" method="POST" data-netlify="true">
 <input type="hidden" name="form-name" value="feed">
 
+<div>
+	<label>RSS Feed</label>
+	<input name="feed" id="feed" required/>
+</div>
 
 <div>
 	<label>Name</label>
 	<input name="name" id="name"/>
 </div>
 
-<div>
-	<label>RSS Feed</label>
-	<input name="feed" id="feed" required/>
-</div>
 
 <div>
 	<label>Message</label>
