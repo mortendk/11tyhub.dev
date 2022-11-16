@@ -21,9 +21,9 @@ module.exports = class {
 
     // atom
     feed.addSource("atom", "Blog", "https://11ty.rocks/feed/");
+    feed.addSource("atom", "Blog", "https://11ty.dev//blog/feed.xml");
 
     // Mastodon
-    feed.addSource("rss", "Mastodon", "https://fosstodon.org/users/eleventy.rss");
     feed.addSource("rss", "Mastodon", "https://fosstodon.org/users/saga11.rss");
 
 
