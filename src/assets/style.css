@@ -16,7 +16,7 @@ header {
 	display: flex;
 	justify-items: center;
 	place-items: center;
-	width: 30rem;
+	width: 50rem;
 	margin: 0 auto;
 }
 
@@ -70,4 +70,15 @@ h2 {
 
 .feeditem__meta {
 	margin: 1rem;
+}
+
+
+header input {
+	height: 2rem;
+	border-radius: 0.25rem;
+	border:none;
+	padding: .5rem;
+	margin: 0 1rem;
+	background: #e1e0f9
+
 }
