@@ -11,13 +11,15 @@
 	<link rel="author" href="humans.txt"/>
 
 	<title>{{ site.title }}</title>
-	<link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet">
+	<link href="{{ '/assets/style.css' | url }}" rel="stylesheet">
 </head>
 <body>
 
 <h1>	{{ title }}</h1>
 
 {{ content | safe }}
+
+ <a href="feed.rss"></a>
 
 
 		{# Service worker #}

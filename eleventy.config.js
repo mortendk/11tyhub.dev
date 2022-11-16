@@ -9,6 +9,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(syntaxHighlight);
 
+	// passthrough
+	eleventyConfig.addPassthroughCopy("src/service-workers.js");
+	eleventyConfig.addPassthroughCopy("src/assets/");
+
 	// Directory setup
 	return {
 		markdownTemplateEngine: "njk",

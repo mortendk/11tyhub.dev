@@ -1,14 +1,16 @@
 {
-  "name": "11tyhub.dev",
-  "version": "1.0.0",
-  "description": "",
+  "name": "11ty Hub",
+  "version": "0.1.0",
+  "description": "A collection of 11ty feeds",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve  --quiet"
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "build": "npm run debug",
+    "debug": "ELEVENTY_ENV=prod DEBUG=* eleventy"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0-canary.16",
     "@11ty/eleventy-plugin-rss": "^1.2.0",

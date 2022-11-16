@@ -6,4 +6,12 @@ eleventyExcludeFromCollections: false
 layout: page.njk
 ---
 
-RSS is awesome
+## Eleventy Hub
+
+A collection of 11ty feeds
+
+
+[feed.rss](/feed.rss)
+
+
+
