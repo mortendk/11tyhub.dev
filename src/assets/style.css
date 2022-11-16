@@ -12,6 +12,18 @@ main {
 	border-radius: 1rem;
 }
 
+header {
+	display: flex;
+	justify-items: center;
+	place-items: center;
+	width: 30rem;
+	margin: 0 auto;
+}
+
+header h1 {
+
+	font-size: 1rem;
+}
 footer {
 	width: 80%;
 	margin: 0 auto;
