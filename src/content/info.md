@@ -19,14 +19,10 @@ Please make sure its only 11ty stuff thats in the feed
 
 /mortendk
 
-<form
-	class=""
-	name="feed"
-	method="POST"
-	data-netlify="true"
-	netlify-honeypot="bot-field"
-	action="/thanx/"
->
+<form name="contact" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="feed">
+
+
 <div>
 	<label>Name</label>
 	<input name="name" id="name"/>
