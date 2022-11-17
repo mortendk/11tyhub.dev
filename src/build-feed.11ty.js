@@ -13,7 +13,6 @@ module.exports = class {
     let feed = new ActivityFeed();
     feed.setCacheDuration("1h");
 
-    // rss feed
 
     // atom
     feed.addSource("atom", "11ty Rocks", "https://11ty.rocks/feed/");
@@ -21,8 +20,30 @@ module.exports = class {
     feed.addSource("atom", "11ty Meetup", "https://11tymeetup.dev/feed.xml");
     feed.addSource("atom", "Darek Kay", "https://darekkay.com/feeds/tag-11ty-atom.xml");
 
+    //gh releases
+    // feed.addSource("atom", "GH eleventy", "https://github.com/11ty/eleventy/releases.atom");
+    // feed.addSource("atom", "GH eleventy img", "https://github.com/11ty/eleventy-img/releases.atom");
+    // // feed.addSource("atom", "GH eleventy fetch", "https://github.com/11ty/eleventy-fetch/releases.atom");
+    // feed.addSource("atom", "GH eleventy syntaxhighlight", "https://github.com/11ty/eleventy-plugin-syntaxhighlight/releases.atom");
+    // feed.addSource("atom", "GH eleventy navigation", "https://github.com/11ty/eleventy-navigation/releases.atom");
+    // feed.addSource("atom", "GH eleventy rss", "https://github.com/11ty/eleventy-plugin-rss/releases.atom");
+    // feed.addSource("atom", "GH eleventy vue", "https://github.com/11ty/eleventy-plugin-vue/releases.atom");
+    // feed.addSource("atom", "GH 11ty/eleventy", "https://github.com/11ty/eleventy/releases.atom");
+
+
+
     // YouTube
-    // feed.addSource("youtubeUser", "YouTube", "UCskGTioqrMBcw8pd14_334A");
+    // playlist
+    feed.addSource("atom", "11ty Second 11ty ", "https://www.youtube.com/feeds/videos.xml?playlist_id=PLOSLUtJ_J3rrNiBBN-wn2BJ11OHiBuC1n");
+    // accounts
+
+
+
+    feed.addSource("atom", "Eleventy Meetyp YT", "https://www.youtube.com/feeds/videos.xml?channel_id=UC1QVD9VQPteu0E5Qq5vZAQA");
+    feed.addSource("atom", "Eleventy Rocks YT ", "https://www.youtube.com/feeds/videos.xml?channel_id=UCTuSQg_Ol4shhSYQ1EfpHiQ");
+    feed.addSource("atom", "Eleventy YT", "https://www.youtube.com/feeds/videos.xml?channel_id=UCskGTioqrMBcw8pd14_334A");
+
+
 
     // Mastodon
     feed.addSource("rss", "saga11 Mastodon", "https://fosstodon.org/users/saga11.rss");
