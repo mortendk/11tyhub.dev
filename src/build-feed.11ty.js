@@ -23,6 +23,7 @@ module.exports = class {
     //gh releases
     // feed.addSource("atom", "GH eleventy", "https://github.com/11ty/eleventy/releases.atom");
     // feed.addSource("atom", "GH eleventy img", "https://github.com/11ty/eleventy-img/releases.atom");
+    // feed.addSource("atom", "GH eleventy fetch", "https://github.com/11ty/eleventy-fetch/releases.atom");
     // // feed.addSource("atom", "GH eleventy fetch", "https://github.com/11ty/eleventy-fetch/releases.atom");
     // feed.addSource("atom", "GH eleventy syntaxhighlight", "https://github.com/11ty/eleventy-plugin-syntaxhighlight/releases.atom");
     // feed.addSource("atom", "GH eleventy navigation", "https://github.com/11ty/eleventy-navigation/releases.atom");
@@ -30,26 +31,20 @@ module.exports = class {
     // feed.addSource("atom", "GH eleventy vue", "https://github.com/11ty/eleventy-plugin-vue/releases.atom");
     // feed.addSource("atom", "GH 11ty/eleventy", "https://github.com/11ty/eleventy/releases.atom");
 
-
-
     // YouTube
     // playlist
     feed.addSource("atom", "11ty Second 11ty ", "https://www.youtube.com/feeds/videos.xml?playlist_id=PLOSLUtJ_J3rrNiBBN-wn2BJ11OHiBuC1n");
     // accounts
 
-
-
-    feed.addSource("atom", "Eleventy Meetyp YT", "https://www.youtube.com/feeds/videos.xml?channel_id=UC1QVD9VQPteu0E5Qq5vZAQA");
-    feed.addSource("atom", "Eleventy Rocks YT ", "https://www.youtube.com/feeds/videos.xml?channel_id=UCTuSQg_Ol4shhSYQ1EfpHiQ");
-    feed.addSource("atom", "Eleventy YT", "https://www.youtube.com/feeds/videos.xml?channel_id=UCskGTioqrMBcw8pd14_334A");
-
+    feed.addSource("youtubeUser", "Eleventy Meetup", "UC1QVD9VQPteu0E5Qq5vZAQA");
+    feed.addSource("youtubeUser", "11ty Rocks", "UCTuSQg_Ol4shhSYQ1EfpHiQ");
+    feed.addSource("youtubeUser", "Eleventy youtube", "UCskGTioqrMBcw8pd14_334A");
 
 
     // Mastodon
     feed.addSource("rss", "saga11 Mastodon", "https://fosstodon.org/users/saga11.rss");
 
     // twitter
-
     return feed.toRssFeed({
       title: "Eleventy Hub",
       language: "en",
