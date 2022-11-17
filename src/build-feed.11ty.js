@@ -19,6 +19,7 @@ module.exports = class {
     feed.addSource("atom", "11ty Rocks", "https://11ty.rocks/feed/");
     feed.addSource("atom", "11ty", "https://11ty.dev//blog/feed.xml");
     feed.addSource("atom", "11ty Meetup", "https://11tymeetup.dev/feed.xml");
+    feed.addSource("atom", "Darek Kay", "https://darekkay.com/feeds/tag-11ty-atom.xml");
 
     // YouTube
     // feed.addSource("youtubeUser", "YouTube", "UCskGTioqrMBcw8pd14_334A");

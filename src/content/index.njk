@@ -10,7 +10,7 @@ layout: page.njk
 
 {# only get the last 20 #}
 {% for feed in feeds | sort(true, false, 'pubDate')  %}
-	{% if loop.index < 60 %}
+	{% if loop.index < 200 %}
 
 <article class="feeditem">
 
