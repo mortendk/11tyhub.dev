@@ -7,10 +7,17 @@ layout: page.njk
 ---
 
 
+
+{# only get the last 20 #}
 {% for feed in feeds | sort(true, false, 'pubDate')  %}
+	{% if loop.index < 20 %}
 
 <article class="feeditem">
 
+	{{ feed.feedtitle }}
+	{{ feed.feedurl }}
+	{# {{ feed.feedlink }} #}
+	{{ feed.feedbuild  | formatDate("DDD T")  }}
 	<h2>
 		<div class="icon">
 			{% include "rss.svg" %}
@@ -30,11 +37,16 @@ layout: page.njk
 	</div>
 
 	<div class="feeditem__meta">
-		 Date: {{ feed.pubDate  | formatDate("DDD T")  }}
-		 <br>
-		 <a href="{{feed.link}}" target="_blank">{{feed.link}}</a>
+
+
+		 Date: {{ feed.pubDate  | formatDate("DDD T") }} <br>
+
+		 id: <a href="{{feed.id}}" target="_blank">{{feed.id}}</a> <br>
+
+		 Link: <a href="{{feed.link}}" target="_blank">{{feed.link}}</a>
 	</div>
 
 </article>
 
+	{% endif %}
 {% endfor %}

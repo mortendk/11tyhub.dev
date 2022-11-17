@@ -13,19 +13,20 @@ module.exports = class {
     let feed = new ActivityFeed();
     feed.setCacheDuration("1h");
 
-
-    // ALL the feeds
-    // TODO: this should be done a bit smoother a loop over a bunch of resources or ?
-
     // rss feed
 
     // atom
-    feed.addSource("atom", "Blog", "https://11ty.rocks/feed/");
-    feed.addSource("atom", "Blog", "https://11ty.dev//blog/feed.xml");
+    feed.addSource("atom", "11ty Rocks", "https://11ty.rocks/feed/");
+    feed.addSource("atom", "11ty", "https://11ty.dev//blog/feed.xml");
+    feed.addSource("atom", "11ty Meetup", "https://11tymeetup.dev/feed.xml");
+
+    // YouTube
+    // feed.addSource("youtubeUser", "YouTube", "UCskGTioqrMBcw8pd14_334A");
 
     // Mastodon
-    feed.addSource("rss", "Mastodon", "https://fosstodon.org/users/saga11.rss");
+    feed.addSource("rss", "saga11 Mastodon", "https://fosstodon.org/users/saga11.rss");
 
+    // twitter
 
     return feed.toRssFeed({
       title: "Eleventy Hub",
