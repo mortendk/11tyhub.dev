@@ -12,8 +12,7 @@ date: Last Modified
 
 # Eleventy Hub
 
-The eleventy hub aggregates all rss feeds we can find that
-is if some interest for the [11ty Project](https://11ty.dev)
+The eleventy hub aggregates rss feeds from the [11ty Project](https://11ty.dev)
 
 
 <input value="https://11ty.dev/feed.rss" class="superawesome">
