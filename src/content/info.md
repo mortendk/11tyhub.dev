@@ -4,45 +4,46 @@ permalink: info/index.html
 eleventyExcludeFromCollections: false
 
 layout: page.njk
+
+tags: page
+date: Last Modified
 ---
 
-# A collection of 11ty feeds
-The 11th Hub is a list of blogs, post & microblogs from the 11ty community so we can all keep up with whats going on with our favorite possum.
+
+# Eleventy Hub
+
+The eleventy hub aggregates all rss feeds we can find that
+is if some interest for the [11ty Project](https://11ty.dev)
+
+
+<input value="https://11ty.dev/feed.rss" class="superawesome">
+
 
 ## PRs & Ideas are more than welcome
-This is hacked(tm) together a little bit to fast PRs and ideas etc are more than welcome over at [github](https://github.com/mortendk/11tyhub.dev)
+ The repo is open for PRs [Github](https://github.com/mortendk/11tyhub.dev)
 
-## Submit your feed!
-The door is always open for any rss/atom/whatever feed that we can parse in and out
-Please make sure its only 11ty stuff thats in the feed
+## Submit your feed
+The hub takes anything that is eleventy specific, please make sure
+your feed is only containing content of relevans for the 11ty project
 
-/mortendk
+
 
 <form name="contact" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="feed">
+	<input type="hidden" name="form-name" value="feed">
+
+	<label for="feed">RSS Feed</label>
+	<input type="url" name="feed" id="feed" required/>
 
 
-<div>
-	<label>RSS Feed</label>
-	<input name="feed" id="feed" required/>
-</div>
-
-<div>
-	<label>Name</label>
-	<input name="name" id="name"/>
-</div>
-
-
-<div>
-	<label>Message</label>
+	<label for="message">Message</label>
 	<textarea name="message" id="message"></textarea>
-</div>
+
 
 <button aria-label="Submit">
-	Send
+	Submit
 </button>
 
-<div class="hidden" hidden>
+<div hidden>
 	<label for="supersecret">secret</label>
 	<input name="bot-field" id="supersecret" />
 </div>

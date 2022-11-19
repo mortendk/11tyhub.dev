@@ -1,9 +1,11 @@
 ---
-title: News Readers
+title: Rss Info
 permalink: readers/index.html
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 
 layout: page.njk
+tags: page
+date: Last Modified
 ---
 
 ## Mac

@@ -40,9 +40,8 @@ module.exports = class {
     feed.addSource("youtubeUser", "11ty Rocks", "UCTuSQg_Ol4shhSYQ1EfpHiQ");
     feed.addSource("youtubeUser", "Eleventy youtube", "UCskGTioqrMBcw8pd14_334A");
 
-
     // Mastodon
-    feed.addSource("rss", "saga11 Mastodon", "https://fosstodon.org/users/saga11.rss");
+    // feed.addSource("rss", "saga11 Mastodon", "https://fosstodon.org/users/saga11.rss");
 
     // twitter
     return feed.toRssFeed({
