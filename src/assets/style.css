@@ -27,8 +27,8 @@ header {
 	justify-items: center;
 	place-items: center;
 	width: 30rem;
+	max-width: 100%;
 	margin: 0 auto;
-	background: red
 }
 
 @media (min-width: 1280px) {
