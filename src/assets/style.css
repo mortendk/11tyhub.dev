@@ -4,7 +4,7 @@ body {
 }
 
 a {
-	color: #DC2626;
+	color: darkred;
 }
 a:hover {
 	background: LightSalmon
@@ -66,7 +66,7 @@ header h1 {
 }
 
 .ascii-awesome {
-	color: gray;
+	color: darkred;
 	font-family: monospace;
 	font-size:1.2rem;
 	white-space: pre;
@@ -75,7 +75,7 @@ header h1 {
 }
 
 .ascii{
-	color: grey;
+	color: DimGray;
 	font-family: monospace;
 	white-space: pre;
 	letter-spacing: -0.2em;
@@ -86,7 +86,7 @@ header h1 {
 
 .icon {
 	width: 2rem;
-	color: #DC2626
+	color: darkred
 }
 
 h2 a {
@@ -136,4 +136,16 @@ button {
 	font-weight: bold;
 	font-size: 0.8rem;
 	text-transform: uppercase;
+}
+
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
