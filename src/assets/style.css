@@ -3,9 +3,22 @@ body {
 	font-family: monospace;
 }
 
+a {
+	color: #DC2626;
+}
+a:hover {
+	background: LightSalmon
+}
 main {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+	main {
+		width: 60%;
+		margin: 0 auto;
+	}
 }
 
 header {
@@ -17,9 +30,12 @@ header {
 	margin: 0 auto;
 }
 
-footer {text-align: center}
-header h1 {
-	font-size: 2rem;
+footer {
+	text-align: center
+}
+
+h1{
+	font-weight:normal;
 }
 
 h2 {
@@ -28,12 +44,22 @@ h2 {
 	margin: 0;
 }
 
+
+header h1 {
+	font-size: 2rem;
+}
+
 .text {
-	padding: 1rem 0;
-	width: 50%;
+	padding: 2rem 0;
 	margin: 0 auto;
 	font-size: 1.2rem;
 }
+@media (min-width: 1280px) {
+	.text {
+		width: 50%
+	}
+}
+
 .ascii-awesome {
 	color: gray;
 	font-family: monospace;
@@ -53,7 +79,7 @@ h2 {
 
 .icon {
 	width: 2rem;
-	color: #FD5956
+	color: #DC2626
 }
 
 h2 a {
@@ -78,7 +104,6 @@ input.superawesome {
 label {
 	display: block;
 	font-weight: bold;
-
 }
 
 input {
@@ -88,10 +113,20 @@ input {
 	font-family: monospace;
 	font-size: 1.5rem;
 }
+
 textarea {
 	height: 10rem;
 	width: 30rem;
 	font-weight: bold;
 	font-family: monospace;
 	font-size: 1.5rem;
+}
+
+button {
+	padding: 0.5rem;
+	background-color: orange;
+	border: none;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-transform: uppercase;
 }
