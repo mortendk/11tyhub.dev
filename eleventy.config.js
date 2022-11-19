@@ -3,15 +3,16 @@ const fs = require("fs");
 const packageJson = require("./package.json");
 const version = packageJson.version;
 
-
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const EleventyFetch = require("@11ty/eleventy-fetch");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
 module.exports = function (eleventyConfig) {
 	// Plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(syntaxHighlight);
+	eleventyConfig.addPlugin(faviconsPlugin);
 
 	// passthrough
 	eleventyConfig.addPassthroughCopy("src/service-workers.js");

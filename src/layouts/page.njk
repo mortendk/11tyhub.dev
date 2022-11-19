@@ -11,27 +11,42 @@
 	<title>Eleventy Hub</title>
 	<link href="{{ '/assets/style.css' | url }}" rel="stylesheet">
 
-  <meta name="description" content="Aggregated RSS feeds from the 11ty Project">
+  <meta name="description" content="An aggregation of feeds, blogs & releases from the 11ty Project">
 
 	<meta property="og:url" content="https://11tyhub.dev">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Eleventy Hub">
-	<meta property="og:description" content="Aggregated RSS feeds from the 11ty Project">
+	<meta property="og:description" content="An aggregation of feeds, blogs & releases from the 11ty Project">
 	<meta property="og:image" content="/assets/facebook.jpg">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="twitter:domain" content="11tyhub.dev">
 	<meta property="twitter:url" content="https://11tyhub.dev">
 	<meta name="twitter:title" content="Eleventy Hub">
-	<meta name="twitter:description" content="Aggregated RSS feeds from the 11ty Project">
+	<meta name="twitter:description" content="An aggregation of feeds, blogs & releases from the 11ty Project">
 	<meta name="twitter:image" content="/assets/twitter.jpg">
+
+	{% favicons "src/assets/icon.svg",
+			appleIconBgColor= '#808080',
+			manifestData={
+				"name": 'Eleventy Hub' ,
+				"short_name": '11ty hub',
+				"start_url": "./",
+				"scope": "/",
+				"display": "standalone",
+				"background_color": '#808080',
+				"theme_color": '#808080',
+				"description": "An aggregation of feeds, blogs & releases from the 11ty Project"
+			}
+	%}
+
 </head>
 <body>
 
 {% include "header.njk" %}
 
 <main>
-	<h2>{{ title }}</h1>
+	<h1>{{ title }}</h1>
 
 	{{ content | safe }}
 

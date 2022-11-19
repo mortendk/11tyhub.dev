@@ -1,5 +1,5 @@
 ---
-title: 11ty Hub Info
+title: Info
 permalink: info/index.html
 eleventyExcludeFromCollections: false
 
@@ -10,7 +10,6 @@ date: Last Modified
 ---
 
 
-# Eleventy Hub
 An aggregation of feeds, blogs & releases from the <a href="https://11ty.dev">11ty Project</a>
 
 

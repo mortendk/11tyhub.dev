@@ -3,6 +3,12 @@ body {
 	font-family: monospace;
 }
 
+a {
+	color: #DC2626;
+}
+a:hover {
+	background: LightSalmon
+}
 main {
 	width: 90%;
 	margin: 0 auto;
@@ -28,14 +34,19 @@ footer {
 	text-align: center
 }
 
-header h1 {
-	font-size: 2rem;
+h1{
+	font-weight:normal;
 }
 
 h2 {
 	font-size: 1.25rem;
 	font-weight:normal;
 	margin: 0;
+}
+
+
+header h1 {
+	font-size: 2rem;
 }
 
 .text {
@@ -68,7 +79,7 @@ h2 {
 
 .icon {
 	width: 2rem;
-	color: #FD5956
+	color: #DC2626
 }
 
 h2 a {
