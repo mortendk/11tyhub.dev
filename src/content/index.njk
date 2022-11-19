@@ -4,24 +4,27 @@ permalink: /index.html
 eleventyExcludeFromCollections: false
 
 layout: page.njk
+tags: page
 ---
-
+<p class="text">
+The eleventy hub aggregates all rss feeds we can find that
+is if some interest for the <a href="https://11ty.dev">11ty Project</a>
+</p>
 
 
 {# only get the last 20 #}
 {% for feed in feeds | sort(true, false, 'pubDate')  %}
-	{% if loop.index < 300 %}
+	{% if loop.index < 200 %}
 
-<article class="feeditem">
-
-	{{ feed.feedtitle }}
-	{{ feed.feedurl }}
-	{# {{ feed.feedlink }} #}
-	{{ feed.feedbuild  | formatDate("DDD T")  }}
+<article>
 	<h2>
-		<div class="icon">
-			{% include "rss.svg" %}
-		</div>
+	{% if 'yt:video' in feed.id %}
+		📺
+	{% elseif 'tag:github.com' in feed.id %}
+		👾
+	{% else %}
+		🧑🏽‍💻
+	{% endif %}
 
 		<a href="{{feed.link}}" target="_blank">
 		{% if feed.title %}
@@ -32,19 +35,19 @@ layout: page.njk
 		</a>
 	</h2>
 
-	<div class="feeditem__content">
+	<p>
 		{{ feed.content | striptags(true) | truncate(800, true, "...") | safe }}
+	</p>
+
+	<div>
+	{{ feed.pubDate  | formatDate("DDD T") }} |
+	[<a href="{{ feed.feedlink }}">{{ feed.feedtitle }}</a>]
 	</div>
 
-	<div class="feeditem__meta">
-
-
-		 Date: {{ feed.pubDate  | formatDate("DDD T") }} <br>
-
-		 id: <a href="{{feed.id}}" target="_blank">{{feed.id}}</a> <br>
-
-		 Link: <a href="{{feed.link}}" target="_blank">{{feed.link}}</a>
+	<div class="ascii">
+- + - - - - - - - - - - - - - - - - - - - + - - - - - - + - - - - - - + - - - - - -- + - - - - - - - - - - - - - - - - - - - + - - - - - - + - - - - - - + - - - - - -
 	</div>
+
 
 </article>
 

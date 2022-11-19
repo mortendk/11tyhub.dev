@@ -1,43 +1,54 @@
 body {
 	background-color: whitesmoke;
-	color: black;
-	font-family: sans-serif;
+	font-family: monospace;
 }
 
 main {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
-	background-color: white;
-	padding: 1rem;
-	border-radius: 1rem;
 }
 
 header {
 	display: flex;
+	flex-flow: column;
 	justify-items: center;
 	place-items: center;
 	width: 50rem;
 	margin: 0 auto;
 }
 
+footer {text-align: center}
 header h1 {
-
-	font-size: 1rem;
-}
-footer {
-	width: 80%;
-	margin: 0 auto;
-	padding: 1rem;
-	text-align: center
-}
-
-h1 {
 	font-size: 2rem;
 }
+
 h2 {
-	font-size: 2rem;
+	font-size: 1.25rem;
+	font-weight:normal;
 	margin: 0;
-	color: #3B719F
+}
+
+.text {
+	padding: 1rem 0;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+.ascii-awesome {
+	color: gray;
+	font-family: monospace;
+	font-size:1.2rem;
+	white-space: pre;
+	letter-spacing: -0.2em;
+ line-height: 0.8em;
+}
+
+.ascii{
+	color: grey;
+	font-family: monospace;
+	white-space: pre;
+	letter-spacing: -0.2em;
+ line-height: 0.8em;
 }
 
 .icon {
@@ -45,40 +56,42 @@ h2 {
 	color: #FD5956
 }
 
-.feeditem {
-	margin: 0.5rem;
-	padding: 0.5rem;
-	background-color: #D8DCD6
-}
-
-.feeditem .icon {
-	color: #abada9
-}
-.feeditem h2 a {
-	color: #3B719F;
-	font-weight: light;
+h2 a {
 	text-decoration: none
 }
 
-.feeditem h2 a:hover{
+h2 a:hover{
 	text-decoration: underline;
 }
 
-.feeditem__content {
-
-}
-
-.feeditem__meta {
-	margin: 1rem;
-}
-
-
-header input {
+input.superawesome {
 	height: 2rem;
-	border-radius: 0.25rem;
-	border:none;
-	padding: .5rem;
-	margin: 0 1rem;
-	background: #e1e0f9
+	width: 30rem;
+	margin: 1rem auto;
+	text-align: center;
+	color: orangered;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
 
+label {
+	display: block;
+	font-weight: bold;
+
+}
+
+input {
+	height: 2rem;
+	width: 30rem;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+textarea {
+	height: 10rem;
+	width: 30rem;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.5rem;
 }
