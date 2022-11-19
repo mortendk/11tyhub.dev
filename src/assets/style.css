@@ -26,8 +26,13 @@ header {
 	flex-flow: column;
 	justify-items: center;
 	place-items: center;
-	width: 50rem;
+	width: 30rem;
 	margin: 0 auto;
+	background: red
+}
+
+@media (min-width: 1280px) {
+
 }
 
 footer {
@@ -74,7 +79,9 @@ header h1 {
 	font-family: monospace;
 	white-space: pre;
 	letter-spacing: -0.2em;
- line-height: 0.8em;
+  line-height: 0.8em;
+	max-width: 90%;
+	overflow: hidden
 }
 
 .icon {
